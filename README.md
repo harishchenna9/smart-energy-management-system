@@ -43,3 +43,24 @@ Based on the active load type and power thresholds, it automatically:
 **Harish Chenna**
 - GitHub: https://github.com/harishchenna9
 - LinkedIn: https://www.linkedin.com/in/harish-chenna
+
+
+## Results and Observations
+
+- The system successfully prioritizes energy sources based on availability.
+- Loads are powered using solar energy whenever sufficient solar input is available.
+- Automatic switching to battery supply occurs during low or no solar conditions.
+- Combined solar and battery operation is enabled during high load demand.
+- In critical situations, the system indicates the need for external power supply.
+- The LCD displays real-time solar and battery status for user monitoring.
+- Relay-based switching ensures uninterrupted power to selected loads.
+
+
+## Test Scenarios
+
+| Load Type | Solar Status | Battery Status | System Action |
+|----------|-------------|----------------|---------------|
+| Domestic | High | Low | Runs on Solar |
+| Industrial | Low | High | Runs on Battery |
+| Emergency | Low | Low | Requests External Power |
+| Mixed Load | Medium | Medium | Runs on Solar + Battery |
